@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8334443365714322790}
   - component: {fileID: 744419425072845816}
+  - component: {fileID: 8991468384913525532}
+  - component: {fileID: 7634550776801766116}
+  - component: {fileID: 661563821160747250}
   - component: {fileID: 9174598173895839527}
   - component: {fileID: 4431782744780693877}
-  - component: {fileID: 590757867779218107}
-  - component: {fileID: 7707803824726051914}
-  - component: {fileID: 2963530707945961597}
   - component: {fileID: 4736326574911519174}
   m_Layer: 0
   m_Name: Slingshot
@@ -46,6 +46,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5466974630831008652}
   m_Mesh: {fileID: -5495902117074765545, guid: dde95aaae2b86fa459a26539304c1ae2, type: 3}
+--- !u!114 &8991468384913525532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5466974630831008652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5942619de652e5b4485402a8eae22eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 10
+--- !u!114 &7634550776801766116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5466974630831008652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c95fb1dfffdbb24db2244e2460518c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LitMaterial: {fileID: 2100000, guid: 77e05e6d1ba65284590fe224f2e97ee3, type: 2}
+--- !u!114 &661563821160747250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5466974630831008652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0e857af003c904d8dc7db3417a8f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandomForce: 1
+  MinForce: 50
+  MaxForce: 30
 --- !u!23 &9174598173895839527
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -184,48 +225,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &590757867779218107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5466974630831008652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5942619de652e5b4485402a8eae22eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreValue: 10
---- !u!114 &7707803824726051914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5466974630831008652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c95fb1dfffdbb24db2244e2460518c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LitMaterial: {fileID: -876546973899608171, guid: bd2a03be5ce115c4abbf65558859072b,
-    type: 3}
---- !u!114 &2963530707945961597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5466974630831008652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e0e857af003c904d8dc7db3417a8f5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RandomForce: 0
-  MinForce: 3
-  MaxForce: 5
 --- !u!64 &4736326574911519174
 MeshCollider:
   m_ObjectHideFlags: 0

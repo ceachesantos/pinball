@@ -44,8 +44,13 @@ public class UIelements : MonoBehaviour
 
     public void ballSpawnButtonDEBUG()
     {
-        Destroy(ball);
+        //Destroy(ball);
         ball = Instantiate(ballPrefab, spawnPoint.transform.position, Quaternion.identity);
+    }
+
+    public void closeApp()
+    {
+        Application.Quit();
     }
         
 }
